@@ -53,7 +53,6 @@ public class contacts {
 
     @DELETE
     @Path("remove/{name}")
-    @Produces(MediaType.APPLICATION_JSON)
     public String removeContacts(@PathParam("name") String name){
 
         contactRepositoryObj.deleteContact(name);
