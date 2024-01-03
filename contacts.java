@@ -13,6 +13,7 @@ public class contacts {
     @Produces(MediaType.APPLICATION_JSON)
     public List<contactInformation> getContacts(){
 
+        System.out.println("After Filter");
         return contactRepositoryObj.getAllContacts();
 
     }
